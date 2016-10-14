@@ -1,0 +1,10 @@
+\target
+\.settings
+.project
+.classpath
+\bin
+*.class
+\rebel.xml
+/target/
+\.idea
+architecture-for-test.iml
