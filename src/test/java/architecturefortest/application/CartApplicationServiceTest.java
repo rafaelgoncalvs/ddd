@@ -1,19 +1,25 @@
 package architecturefortest.application;
 
-import architecturefortest.application.base.ServiceApplicationTestBase;
-import org.junit.Before;
-import org.junit.Test;
-import architecturefortest.domain.model.*;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import architecturefortest.application.base.ServiceApplicationTestBase;
+import architecturefortest.domain.model.Cart;
+import architecturefortest.domain.model.CartBuilder;
+import architecturefortest.domain.model.CartRepository;
+import architecturefortest.domain.model.Item;
+import architecturefortest.domain.model.Shopper;
+import architecturefortest.domain.model.ShopperBuilder;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class CartApplicationServiceTest extends ServiceApplicationTestBase {
